@@ -1,0 +1,352 @@
+\begin{frame}{Информация о докладчике}
+\phantomsection\label{ux438ux43dux444ux43eux440ux43cux430ux446ux438ux44f-ux43e-ux434ux43eux43aux43bux430ux434ux447ux438ux43aux435}
+\begin{columns}[c]
+\begin{column}{0.7\textwidth}
+\begin{itemize}
+\tightlist
+\item
+  Коняева Марина Александровна
+\item
+  Студентка группы НФИбд-01-21
+\item
+  Студ. билет 1032217044
+\item
+  Российский университет дружбы народов
+\end{itemize}
+\end{column}
+
+\begin{column}{0.3\textwidth}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Цель лабораторной работы}
+\phantomsection\label{ux446ux435ux43bux44c-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b}
+\begin{itemize}
+\tightlist
+\item
+  Получить практические навыки работы в консоли с атрибутами файлов,
+  закрепить теоретические основы дискреционного разграничения доступа в
+  современных системах с открытым кодом на базе ОС Linux
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Теоретическая справка}
+\phantomsection\label{ux442ux435ux43eux440ux435ux442ux438ux447ux435ux441ux43aux430ux44f-ux441ux43fux440ux430ux432ux43aux430}
+\textbf{Права доступа} определяют, какие действия конкретный
+пользователь может или не может совершать с определенным файлами и
+каталогами. С помощью разрешений можно создать надежную среду --- такую,
+в которой никто не может поменять содержимое ваших документов или
+повредить системные файлы. {[}2{]}.
+\end{frame}
+
+\begin{frame}{Ход выполнения лабораторной работы}
+\phantomsection\label{ux445ux43eux434-ux432ux44bux43fux43eux43bux43dux435ux43dux438ux44f-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b}
+\begin{block}{1. Cоздайте учётную запись пользователя guest}
+\phantomsection\label{cux43eux437ux434ux430ux439ux442ux435-ux443ux447ux451ux442ux43dux443ux44e-ux437ux430ux43fux438ux441ux44c-ux43fux43eux43bux44cux437ux43eux432ux430ux442ux435ux43bux44f-guest}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=0.7\textheight]{image/1.PNG}
+\caption{(рис. 1. useradd guest)}\label{fig:001}
+\end{figure}
+\end{block}
+
+\begin{block}{2. Задайте пароль для пользователя guest}
+\phantomsection\label{ux437ux430ux434ux430ux439ux442ux435-ux43fux430ux440ux43eux43bux44c-ux434ux43bux44f-ux43fux43eux43bux44cux437ux43eux432ux430ux442ux435ux43bux44f-guest}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=0.7\textheight]{image/2.PNG}
+\caption{(рис. 2. passwd guest)}\label{fig:002}
+\end{figure}
+\end{block}
+\end{frame}
+
+\begin{frame}{Ход выполнения лабораторной работы}
+\phantomsection\label{ux445ux43eux434-ux432ux44bux43fux43eux43bux43dux435ux43dux438ux44f-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b-1}
+\begin{block}{3. Войдите в систему от имени пользователя guest}
+\phantomsection\label{ux432ux43eux439ux434ux438ux442ux435-ux432-ux441ux438ux441ux442ux435ux43cux443-ux43eux442-ux438ux43cux435ux43dux438-ux43fux43eux43bux44cux437ux43eux432ux430ux442ux435ux43bux44f-guest}
+\begin{figure}
+\centering
+\includegraphics[width=0.3\textwidth,height=0.3\textheight]{image/3.PNG}
+\caption{(рис. 3. log out)}\label{fig:003}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.3\textwidth,height=0.3\textheight]{image/4.PNG}
+\caption{(рис. 4. log in)}\label{fig:004}
+\end{figure}
+\end{block}
+\end{frame}
+
+\begin{frame}{Ход выполнения лабораторной работы}
+\phantomsection\label{ux445ux43eux434-ux432ux44bux43fux43eux43bux43dux435ux43dux438ux44f-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b-2}
+\begin{block}{4. Определите директорию, в которой вы находитесь}
+\phantomsection\label{ux43eux43fux440ux435ux434ux435ux43bux438ux442ux435-ux434ux438ux440ux435ux43aux442ux43eux440ux438ux44e-ux432-ux43aux43eux442ux43eux440ux43eux439-ux432ux44b-ux43dux430ux445ux43eux434ux438ux442ux435ux441ux44c}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=0.7\textheight]{image/6.PNG}
+\caption{(рис. 6. pwd)}\label{fig:006}
+\end{figure}
+\end{block}
+\end{frame}
+
+\begin{frame}{Ход выполнения лабораторной работы}
+\phantomsection\label{ux445ux43eux434-ux432ux44bux43fux43eux43bux43dux435ux43dux438ux44f-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b-3}
+\begin{block}{5. Уточните имя вашего пользователя командой}
+\phantomsection\label{ux443ux442ux43eux447ux43dux438ux442ux435-ux438ux43cux44f-ux432ux430ux448ux435ux433ux43e-ux43fux43eux43bux44cux437ux43eux432ux430ux442ux435ux43bux44f-ux43aux43eux43cux430ux43dux434ux43eux439}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=0.7\textheight]{image/7.PNG}
+\caption{(рис. 7. whoami)}\label{fig:007}
+\end{figure}
+\end{block}
+
+\begin{block}{6. Уточните имя вашего пользователя, его группу, а также
+группы, куда входит пользователь}
+\phantomsection\label{ux443ux442ux43eux447ux43dux438ux442ux435-ux438ux43cux44f-ux432ux430ux448ux435ux433ux43e-ux43fux43eux43bux44cux437ux43eux432ux430ux442ux435ux43bux44f-ux435ux433ux43e-ux433ux440ux443ux43fux43fux443-ux430-ux442ux430ux43aux436ux435-ux433ux440ux443ux43fux43fux44b-ux43aux443ux434ux430-ux432ux445ux43eux434ux438ux442-ux43fux43eux43bux44cux437ux43eux432ux430ux442ux435ux43bux44c}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=0.7\textheight]{image/8.PNG}
+\caption{(рис. 8. id и groups)}\label{fig:008}
+\end{figure}
+\end{block}
+\end{frame}
+
+\begin{frame}{Ход выполнения лабораторной работы}
+\phantomsection\label{ux445ux43eux434-ux432ux44bux43fux43eux43bux43dux435ux43dux438ux44f-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b-4}
+\begin{block}{7. Сравните полученную информацию об имени пользователя с
+данными, выводимыми в приглашении командной строки}
+\phantomsection\label{ux441ux440ux430ux432ux43dux438ux442ux435-ux43fux43eux43bux443ux447ux435ux43dux43dux443ux44e-ux438ux43dux444ux43eux440ux43cux430ux446ux438ux44e-ux43eux431-ux438ux43cux435ux43dux438-ux43fux43eux43bux44cux437ux43eux432ux430ux442ux435ux43bux44f-ux441-ux434ux430ux43dux43dux44bux43cux438-ux432ux44bux432ux43eux434ux438ux43cux44bux43cux438-ux432-ux43fux440ux438ux433ux43bux430ux448ux435ux43dux438ux438-ux43aux43eux43cux430ux43dux434ux43dux43eux439-ux441ux442ux440ux43eux43aux438}
+\begin{figure}
+\centering
+\includegraphics[width=0.2\textwidth,height=0.2\textheight]{image/9.PNG}
+\caption{(рис. 9. Совпадение)}\label{fig:009}
+\end{figure}
+\end{block}
+
+\begin{block}{8. Просмотрите файл /etc/passwd. Найдите в нём свою
+учётную запись.}
+\phantomsection\label{ux43fux440ux43eux441ux43cux43eux442ux440ux438ux442ux435-ux444ux430ux439ux43b-etcpasswd.-ux43dux430ux439ux434ux438ux442ux435-ux432-ux43dux451ux43c-ux441ux432ux43eux44e-ux443ux447ux451ux442ux43dux443ux44e-ux437ux430ux43fux438ux441ux44c.}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth,height=0.5\textheight]{image/9.1.PNG}
+\caption{(рис. 10. cat /etc/passwd)}\label{fig:010}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth,height=0.5\textheight]{image/9.2.PNG}
+\caption{(рис. 11. cat /etc/passwd)}\label{fig:010}
+\end{figure}
+\end{block}
+\end{frame}
+
+\begin{frame}{Ход выполнения лабораторной работы}
+\phantomsection\label{ux445ux43eux434-ux432ux44bux43fux43eux43bux43dux435ux43dux438ux44f-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b-5}
+\begin{block}{9. Определите существующие в системе директории. Удалось
+ли вам получить список поддиректорий директории /home? Какие права
+установлены на них?}
+\phantomsection\label{ux43eux43fux440ux435ux434ux435ux43bux438ux442ux435-ux441ux443ux449ux435ux441ux442ux432ux443ux44eux449ux438ux435-ux432-ux441ux438ux441ux442ux435ux43cux435-ux434ux438ux440ux435ux43aux442ux43eux440ux438ux438.-ux443ux434ux430ux43bux43eux441ux44c-ux43bux438-ux432ux430ux43c-ux43fux43eux43bux443ux447ux438ux442ux44c-ux441ux43fux438ux441ux43eux43a-ux43fux43eux434ux434ux438ux440ux435ux43aux442ux43eux440ux438ux439-ux434ux438ux440ux435ux43aux442ux43eux440ux438ux438-home-ux43aux430ux43aux438ux435-ux43fux440ux430ux432ux430-ux443ux441ux442ux430ux43dux43eux432ux43bux435ux43dux44b-ux43dux430-ux43dux438ux445}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=0.7\textheight]{image/11.PNG}
+\caption{(рис. 12. ls -l /home/)}\label{fig:011}
+\end{figure}
+\end{block}
+
+\begin{block}{10. Проверьте, какие расширенные атрибуты установлены на
+поддиректориях. Удалось ли вам увидеть расширенные атрибуты директории,
+директорий других пользователей?}
+\phantomsection\label{ux43fux440ux43eux432ux435ux440ux44cux442ux435-ux43aux430ux43aux438ux435-ux440ux430ux441ux448ux438ux440ux435ux43dux43dux44bux435-ux430ux442ux440ux438ux431ux443ux442ux44b-ux443ux441ux442ux430ux43dux43eux432ux43bux435ux43dux44b-ux43dux430-ux43fux43eux434ux434ux438ux440ux435ux43aux442ux43eux440ux438ux44fux445.-ux443ux434ux430ux43bux43eux441ux44c-ux43bux438-ux432ux430ux43c-ux443ux432ux438ux434ux435ux442ux44c-ux440ux430ux441ux448ux438ux440ux435ux43dux43dux44bux435-ux430ux442ux440ux438ux431ux443ux442ux44b-ux434ux438ux440ux435ux43aux442ux43eux440ux438ux438-ux434ux438ux440ux435ux43aux442ux43eux440ux438ux439-ux434ux440ux443ux433ux438ux445-ux43fux43eux43bux44cux437ux43eux432ux430ux442ux435ux43bux435ux439}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=0.7\textheight]{image/12.PNG}
+\caption{(рис. 13. lsattr /home)}\label{fig:012}
+\end{figure}
+\end{block}
+\end{frame}
+
+\begin{frame}{Ход выполнения лабораторной работы}
+\phantomsection\label{ux445ux43eux434-ux432ux44bux43fux43eux43bux43dux435ux43dux438ux44f-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b-6}
+\begin{block}{11. Создайте в домашней директории поддиректорию dir1
+командой. Определите, какие права доступа и расширенные атрибуты были
+выставлены на директорию dir1}
+\phantomsection\label{ux441ux43eux437ux434ux430ux439ux442ux435-ux432-ux434ux43eux43cux430ux448ux43dux435ux439-ux434ux438ux440ux435ux43aux442ux43eux440ux438ux438-ux43fux43eux434ux434ux438ux440ux435ux43aux442ux43eux440ux438ux44e-dir1-ux43aux43eux43cux430ux43dux434ux43eux439.-ux43eux43fux440ux435ux434ux435ux43bux438ux442ux435-ux43aux430ux43aux438ux435-ux43fux440ux430ux432ux430-ux434ux43eux441ux442ux443ux43fux430-ux438-ux440ux430ux441ux448ux438ux440ux435ux43dux43dux44bux435-ux430ux442ux440ux438ux431ux443ux442ux44b-ux431ux44bux43bux438-ux432ux44bux441ux442ux430ux432ux43bux435ux43dux44b-ux43dux430-ux434ux438ux440ux435ux43aux442ux43eux440ux438ux44e-dir1}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=0.7\textheight]{image/13.PNG}
+\caption{(рис. 14. mkdir dir1)}\label{fig:013}
+\end{figure}
+\end{block}
+\end{frame}
+
+\begin{frame}{Ход выполнения лабораторной работы}
+\phantomsection\label{ux445ux43eux434-ux432ux44bux43fux43eux43bux43dux435ux43dux438ux44f-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b-7}
+\begin{block}{12. Снимите с директории dir1 все атрибуты и проверьте с
+её помощью правильность выполнения команды ls -l}
+\phantomsection\label{ux441ux43dux438ux43cux438ux442ux435-ux441-ux434ux438ux440ux435ux43aux442ux43eux440ux438ux438-dir1-ux432ux441ux435-ux430ux442ux440ux438ux431ux443ux442ux44b-ux438-ux43fux440ux43eux432ux435ux440ux44cux442ux435-ux441-ux435ux451-ux43fux43eux43cux43eux449ux44cux44e-ux43fux440ux430ux432ux438ux43bux44cux43dux43eux441ux442ux44c-ux432ux44bux43fux43eux43bux43dux435ux43dux438ux44f-ux43aux43eux43cux430ux43dux434ux44b-ls--l}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=0.7\textheight]{image/14.PNG}
+\caption{(рис. 15. chmod 000 dir1)}\label{fig:014}
+\end{figure}
+\end{block}
+\end{frame}
+
+\begin{frame}{Ход выполнения лабораторной работы}
+\phantomsection\label{ux445ux43eux434-ux432ux44bux43fux43eux43bux43dux435ux43dux438ux44f-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b-8}
+\begin{block}{13. Попытайтесь создать в директории dir1 файл
+file1.Почему вы получили отказ? Проверьте, действительно ли файл не
+находится внутри директории}
+\phantomsection\label{ux43fux43eux43fux44bux442ux430ux439ux442ux435ux441ux44c-ux441ux43eux437ux434ux430ux442ux44c-ux432-ux434ux438ux440ux435ux43aux442ux43eux440ux438ux438-dir1-ux444ux430ux439ux43b-file1.ux43fux43eux447ux435ux43cux443-ux432ux44b-ux43fux43eux43bux443ux447ux438ux43bux438-ux43eux442ux43aux430ux437-ux43fux440ux43eux432ux435ux440ux44cux442ux435-ux434ux435ux439ux441ux442ux432ux438ux442ux435ux43bux44cux43dux43e-ux43bux438-ux444ux430ux439ux43b-ux43dux435-ux43dux430ux445ux43eux434ux438ux442ux441ux44f-ux432ux43dux443ux442ux440ux438-ux434ux438ux440ux435ux43aux442ux43eux440ux438ux438}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=0.7\textheight]{image/15.PNG}
+\caption{(рис. 16. ``test'' \textgreater{}
+/home/guest/dir1/file1)}\label{fig:015}
+\end{figure}
+\end{block}
+\end{frame}
+
+\begin{frame}{Ход выполнения лабораторной работы}
+\phantomsection\label{ux445ux43eux434-ux432ux44bux43fux43eux43bux43dux435ux43dux438ux44f-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b-9}
+\begin{block}{14. Заполните таблицу «Установленные права и разрешённые
+действия» (см. табл. 2.1)}
+\phantomsection\label{ux437ux430ux43fux43eux43bux43dux438ux442ux435-ux442ux430ux431ux43bux438ux446ux443-ux443ux441ux442ux430ux43dux43eux432ux43bux435ux43dux43dux44bux435-ux43fux440ux430ux432ux430-ux438-ux440ux430ux437ux440ux435ux448ux451ux43dux43dux44bux435-ux434ux435ux439ux441ux442ux432ux438ux44f-ux441ux43c.-ux442ux430ux431ux43b.-2.1}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 18\tabcolsep) * \real{0.1000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 18\tabcolsep) * \real{0.1000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 18\tabcolsep) * \real{0.1000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 18\tabcolsep) * \real{0.1000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 18\tabcolsep) * \real{0.1000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 18\tabcolsep) * \real{0.1000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 18\tabcolsep) * \real{0.1000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 18\tabcolsep) * \real{0.1000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 18\tabcolsep) * \real{0.1000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 18\tabcolsep) * \real{0.1000}}@{}}
+\toprule\noalign{}
+\endhead
+Права директории & Права файла & Создание файла & Удаление файла &
+Запись в файл & Чтение файла & Смена директории & Просмотр файлов в
+директории & Переимено- вание файла & Смена атрибутов файла \\
+d(000) & (000) & - & - & - & - & - & - & - & - \\
+d(000) & (100) & - & - & - & - & - & - & - & - \\
+d(000) & (200) & - & - & - & - & - & - & - & - \\
+d(000) & (300) & - & - & - & - & - & - & - & - \\
+d(000) & (400) & - & - & - & - & - & - & - & - \\
+d(000) & (500) & - & - & - & - & - & - & - & - \\
+d(000) & (600) & - & - & - & - & - & - & - & - \\
+d(000) & (700) & - & - & - & - & - & - & - & - \\
+d(100) & (000) & - & - & - & - & + & - & - & + \\
+d(100) & (100) & - & - & - & - & + & - & - & + \\
+d(100) & (200) & - & - & + & - & + & - & - & + \\
+d(100) & (300) & - & - & + & - & + & - & - & + \\
+d(100) & (400) & - & - & - & + & + & - & - & + \\
+d(100) & (500) & - & - & - & + & + & - & - & + \\
+d(100) & (600) & - & - & + & + & + & - & - & + \\
+d(100) & (700) & - & - & + & + & + & - & - & + \\
+d(200) & (000) & - & - & - & - & - & - & - & - \\
+d(200) & (100) & - & - & - & - & - & - & - & - \\
+d(200) & (200) & - & - & - & - & - & - & - & - \\
+d(200) & (300) & - & - & - & - & - & - & - & - \\
+d(200) & (400) & - & - & - & - & - & - & - & - \\
+d(200) & (500) & - & - & - & - & - & - & - & - \\
+d(200) & (600) & - & - & - & - & - & - & - & - \\
+d(200) & (700) & - & - & - & - & - & - & - & - \\
+d(300) & (000) & + & + & - & - & + & - & + & + \\
+d(300) & (100) & + & + & - & - & + & - & + & + \\
+d(300) & (200) & + & + & + & - & + & - & + & + \\
+d(300) & (300) & + & + & + & - & + & - & + & + \\
+d(300) & (400) & + & + & - & + & + & - & + & + \\
+d(300) & (500) & + & + & - & + & + & - & + & + \\
+d(300) & (600) & + & + & + & + & + & - & + & + \\
+d(300) & (700) & + & + & + & + & + & - & + & + \\
+d(400) & (000) & - & - & - & - & - & + & - & - \\
+d(400) & (100) & - & - & - & - & - & + & - & - \\
+d(400) & (200) & - & - & - & - & - & + & - & - \\
+d(400) & (300) & - & - & - & - & - & + & - & - \\
+d(400) & (400) & - & - & - & - & - & + & - & - \\
+d(400) & (500) & - & - & - & - & - & + & - & - \\
+d(400) & (600) & - & - & - & - & - & + & - & - \\
+d(400) & (700) & - & - & - & - & - & + & - & - \\
+d(500) & (000) & - & - & - & - & + & + & - & + \\
+d(500) & (100) & - & - & - & - & + & + & - & + \\
+d(500) & (200) & - & - & + & - & + & + & - & + \\
+d(500) & (300) & - & - & + & - & + & + & - & + \\
+d(500) & (400) & - & - & - & + & + & + & - & + \\
+d(500) & (500) & - & - & - & + & + & + & - & + \\
+d(500) & (600) & - & - & + & + & + & + & - & + \\
+d(500) & (700) & - & - & + & + & + & + & - & + \\
+d(600) & (000) & - & - & - & - & - & + & - & - \\
+d(600) & (100) & - & - & - & - & - & + & - & - \\
+d(600) & (200) & - & - & - & - & - & + & - & - \\
+d(600) & (300) & - & - & - & - & - & + & - & - \\
+d(600) & (400) & - & - & - & - & - & + & - & - \\
+d(600) & (500) & - & - & - & - & - & + & - & - \\
+d(600) & (600) & - & - & - & - & - & + & - & - \\
+d(600) & (700) & - & - & - & - & - & + & - & - \\
+d(700) & (000) & + & + & - & - & + & + & + & + \\
+d(700) & (100) & + & + & - & - & + & + & + & + \\
+d(700) & (200) & + & + & + & - & + & + & + & + \\
+d(700) & (300) & + & + & + & - & + & + & + & + \\
+d(700) & (400) & + & + & - & + & + & + & + & + \\
+d(700) & (500) & + & + & - & + & + & + & + & + \\
+d(700) & (600) & + & + & + & + & + & + & + & + \\
+d(700) & (700) & + & + & + & + & + & + & + & + \\
+\bottomrule\noalign{}
+\end{longtable}
+
+Таблица 2.1 «Установленные права и разрешённые действия»
+\end{block}
+\end{frame}
+
+\begin{frame}{Ход выполнения лабораторной работы}
+\phantomsection\label{ux445ux43eux434-ux432ux44bux43fux43eux43bux43dux435ux43dux438ux44f-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b-10}
+\begin{block}{15. На основании заполненной таблицы определите минимально
+необходимые права для выполнения операций внутри директории dir1,
+заполните табл. 2.2.}
+\phantomsection\label{ux43dux430-ux43eux441ux43dux43eux432ux430ux43dux438ux438-ux437ux430ux43fux43eux43bux43dux435ux43dux43dux43eux439-ux442ux430ux431ux43bux438ux446ux44b-ux43eux43fux440ux435ux434ux435ux43bux438ux442ux435-ux43cux438ux43dux438ux43cux430ux43bux44cux43dux43e-ux43dux435ux43eux431ux445ux43eux434ux438ux43cux44bux435-ux43fux440ux430ux432ux430-ux434ux43bux44f-ux432ux44bux43fux43eux43bux43dux435ux43dux438ux44f-ux43eux43fux435ux440ux430ux446ux438ux439-ux432ux43dux443ux442ux440ux438-ux434ux438ux440ux435ux43aux442ux43eux440ux438ux438-dir1-ux437ux430ux43fux43eux43bux43dux438ux442ux435-ux442ux430ux431ux43b.-2.2.}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}@{}}
+\toprule\noalign{}
+\endhead
+Операция & & Минимальные права на директорию & & Минимальные права на
+файл \\
+Создание файла & & d(300) & & (000) \\
+Удаление файла & & d(300) & & (000) \\
+Чтение файла & & d(100) & & (400) \\
+Запись в файл & & d(100) & & (200) \\
+Переименование файла & & d(300) & & (000) \\
+Создание поддиректории & & d(300) & & (000) \\
+Удаление поддиректории & & d(300) & & (000) \\
+\bottomrule\noalign{}
+\end{longtable}
+
+Таблица 2.2 ``Минимальные права для совершения операций''
+\end{block}
+\end{frame}
+
+\begin{frame}{Вывод}
+\phantomsection\label{ux432ux44bux432ux43eux434}
+\begin{itemize}
+\tightlist
+\item
+  Были получены практические навыки работы в консоли с атрибутами
+  файлов, закреплены теоретические основы дискреционного разграничения
+  доступа в современных системах с открытым кодом на базе ОС Linux
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Список литературы. Библиография}
+\phantomsection\label{ux441ux43fux438ux441ux43eux43a-ux43bux438ux442ux435ux440ux430ux442ux443ux440ux44b.-ux431ux438ux431ux43bux438ux43eux433ux440ux430ux444ux438ux44f}
+{[}1{]} Операционные системы:
+https://blog.skillfactory.ru/glossary/operaczionnaya-sistema/
+
+{[}2{]} Права доступа:
+https://codechick.io/tutorials/unix-linux/unix-linux-permissions
+\end{frame}
